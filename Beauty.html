@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<!-- ---------------------------------------------------------------------- -->
+<!-- NOTE: Please add the following <META> element to your page <HEAD>. -->
+<!-- If necessary, please modify the charset parameter to specify the -->
+<!-- character set of your HTML page. -->
+<!-- ---------------------------------------------------------------------- -->
+
+<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+<script src="https://www.google.com/recaptcha/api.js"></script>
+<script>
+function timestamp() { var response = document.getElementById("g-recaptcha-response"); if (response == null || response.value.trim() == "") {var elems = JSON.parse(document.getElementsByName("captcha_settings")[0].value);elems["ts"] = JSON.stringify(new Date().getTime());document.getElementsByName("captcha_settings")[0].value = JSON.stringify(elems); } } setInterval(timestamp, 500);
+</script>
+
+</head>
+
+  <!-- <body> -->
+  
+  <form>
+    <!-- ---------------------------------------------------------------------- -->
+  <!-- NOTE: Please add the following <FORM> element to your page. -->
+  <!-- ---------------------------------------------------------------------- -->
+
+  <form action="https://test.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+
+  <input type=hidden name='captcha_settings' value='{"keyname":"stb_recaptcha","fallback":"true","orgId":"00D3I0000008n9B","ts":""}'>
+  <input type=hidden name="oid" value="00D3I0000008n9B">
+  <input type=hidden name="retURL" value="https://www.thestaybeautifulfoundation.org/faq">
+
+  <!-- ---------------------------------------------------------------------- -->
+  <!-- NOTE: These fields are optional debugging elements. Please uncomment -->
+  <!-- these lines if you wish to test in debug mode. -->
+  <!-- <input type="hidden" name="debug" value=1> -->
+  <!-- <input type="hidden" name="debugEmail" value="sfried@salesforce.com"> -->
+  <!-- ---------------------------------------------------------------------- -->
+
+  <label for="first_name">First Name</label><input id="first_name" maxlength="40" name="first_name" size="20" type="text" /><br>
+
+  <label for="last_name">Last Name</label><input id="last_name" maxlength="80" name="last_name" size="20" type="text" /><br>
+
+  <label for="email">Email</label><input id="email" maxlength="80" name="email" size="20" type="text" /><br>
+
+  <label for="phone">Phone</label><input id="phone" maxlength="40" name="phone" size="20" type="text" /><br>
+
+  Birthdate:<span class="dateInput dateOnlyInput"><input id="00N3I000000bsrh" name="00N3I000000bsrh" size="12" type="text" /></span><br>
+
+  <label for="street">Street</label><textarea name="street"></textarea><br>
+
+  <label for="city">City</label><input id="city" maxlength="40" name="city" size="20" type="text" /><br>
+
+  <label for="state">State/Province</label><input id="state" maxlength="20" name="state" size="20" type="text" /><br>
+
+  <label for="zip">Zip</label><input id="zip" maxlength="20" name="zip" size="20" type="text" /><br>
+
+  <label for="country">Country</label><input id="country" maxlength="40" name="country" size="20" type="text" /><br>
+
+  Where Did You Hear About Us?:<select id="00N3u00000POxwa" name="00N3u00000POxwa" title="Where Did You Hear About Us?"><option value="">--None--</option><option value="Cancer Center">Cancer Center</option>
+  <option value="Facebook">Facebook</option>
+  <option value="Instagram">Instagram</option>
+  <option value="LinkedIn">LinkedIn</option>
+  <option value="Word of Mouth">Word of Mouth</option>
+  </select><br>
+
+  Where Are You On Your Journey?:<select id="00N3u00000POxwf" name="00N3u00000POxwf" title="Where Are You On Your Journey?"><option value="">--None--</option><option value="Currently Living with Cancer">Currently Living with Cancer</option>
+  <option value="In Remission">In Remission</option>
+  <option value="Survivor">Survivor</option>
+  </select><br>
+
+  Cancer Type:<input id="00N3u00000POxwV" maxlength="100" name="00N3u00000POxwV" size="20" type="text" /><br>
+
+  Cancer Center/ Hospital:<input id="00N3I000000bqIk" maxlength="150" name="00N3I000000bqIk" size="20" type="text" /><br>
+
+  Instagram Handle:<input id="00N6A00000NlcUN" maxlength="50" name="00N6A00000NlcUN" size="20" type="text" /><br>
+
+  Facebook URL:<input id="00N3u00000Pgdvq" maxlength="255" name="00N3u00000Pgdvq" size="20" type="text" /><br>
+
+  Twitter Handle:<input id="00N3u00000Pgdvl" maxlength="100" name="00N3u00000Pgdvl" size="20" type="text" /><br>
+
+  YouTube URL:<input id="00N3u00000Pgdvv" maxlength="255" name="00N3u00000Pgdvv" size="20" type="text" /><br>
+
+  Newsletter Subscriber:<input id="00N3I000000bpJm" name="00N3I000000bpJm" type="checkbox" value="1" /><br>
+
+  Prior Beauty Box Recipient?:<input id="00N3I000000bpKL" name="00N3I000000bpKL" type="checkbox" value="1" /><br>
+
+  <div class="g-recaptcha" data-sitekey="6Ldf07wZAAAAAMiPcDWcOQxYhmUN9-TrGRjWPSor"></div><br>
+  <input type="submit" name="submit">
+
+  </form>
+
+<!-- </body> -->
+</html>
+
+
+
+
